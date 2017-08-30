@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="evidencijaZaposlenikaCSS.css">
+	<title>Evidencija zaposlenika</title>
+	
+	<script>
+		function otvori_unos(){
+			
+			
+			window.open("unosZaposlenika.html");
+			window.close();
+			
+			
+		}
+		
+		function otvori_ispis(){
+		
+			window.open("ispisZaposlenika.php");
+			window.close();
+		}
+		
+		function otvori_pretraga(){
+		
+			window.open("traziZaposlenika.html");
+			window.close();
+			
+		}
+	
+	</script>
+	
+	<style>
+	
+		h1{
+		
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		form{
+			text-align:center
+			
+		}
+		
+		button{
+			padding: 20px 100px 20px 100px;
+			margin: 5px 0px 5px 0px;
+			font-size: 20px
+			
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<h1> GLAVNI IZBORNIK </h1>
+	
+	<div>
+		<form>
+		
+			<button onclick="otvori_unos()">Unos zaposlenika</button> </br>
+			<button onclick="otvori_ispis()">Ispis zaposlenika</button> </br>
+			<button onclick="otvori_pretraga()">Pretraga zaposlenika</button> </br>
+
+			
+		</form>
+	</div>
+
+</body>
+<footer>
+
+	<p> Ivan Tomić - Stručni studij Telematika - Veleučilište u Rijeci - 2016/17 </p>
+
+</footer>
+
+
+</html>

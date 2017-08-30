@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="evidencijaZaposlenikaCSS.css">
+	<title>Pretraga zaposlenika</title>
+	
+	<script>
+		function odustani(){
+			
+			window.open("glavniIzbornik.html");
+			window.close();
+			
+		}
+	
+	</script>
+	
+	<style>
+		h2{
+		
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		form{
+			text-align:center
+			
+		}
+		
+		button{
+			padding: 10px 10px 10px 10px;
+			margin: 20px 0px 5px 0px;
+			font-size: 20px
+			
+		}
+		
+		p{
+			text-align:center;
+			font-size: 15px;
+		}
+		
+		#sumbit{
+			padding: 10px 10px 10px 10px;
+			margin: 20px 0px 5px 0px;
+			font-size: 20px
+		}
+	</style>
+
+</head>
+<body>
+	<h2>PRETRAŽI ZAPOSLENIKE</h2>
+	
+	<div>
+		<p>Odaberi vrstu pretrage i unesi ključnu riječ za pretragu</p> 
+		<form action="pretrazi.php" method="post">
+			<select name="odabir" >
+				<option name ="ime" value="ime">IME</option>
+				<option name = "prezime" value="prezime">PREZIME</option>
+				<option name = "spol" value="spol">SPOL</option>
+				<option name ="sprema" value="sprema">STRUČNA SPREMA</option>
+			</select> 
+			<label> <input type="text" name="subjekt"/> </label> <br/>
+			<input type="submit" value="Pretraži" id="sumbit"></input>
+			<span onClick="odustani()"> <button>Odustani</button> </span>
+			
+			
+		</form>
+	</div>
+	
+</body>
+</html>

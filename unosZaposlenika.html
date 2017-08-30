@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="evidencijaZaposlenikaCSS.css">
+	<title>Unos zaposlenika</title>
+	
+	<script>
+		function odustani(){
+			
+			window.open("glavniIzbornik.html");
+			window.close();
+			
+		}
+		
+	</script>
+	
+	<style>
+	
+		h2{
+		
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		#forma{
+			margin: auto;
+			padding: 0px 0px 0px 500px;
+			
+		}
+		
+		#odustani{
+			padding: 10px 10px 10px 10px;
+			margin: 5px 0px 5px 0px;
+			font-size: 15px;
+			text-align:center;
+			
+		}
+		
+		#kreiraj{
+			padding: 10px 10px 10px 10px;
+			margin: 5px 0px 5px 0px;
+			font-size: 15px;
+			
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<h2> UNOS NOVOG ZAPOSLENIKA </h2>
+		
+	<div id="forma">
+		<form action="kreirajZaposlenika.php" method="post">
+		
+			<label>Ime: </label> <input type="text" name="ime"/> </br>
+			<label>Prezime </label> <input type="text" name="prezime" /> </br>
+			<label>Spol: </label>
+			<select name="spol">
+				<option value="M">M</option>
+				<option value="Z">Z</option>
+			</select> </br>
+			<label>OIB: </label> <input type="number" name="oib"> </br>
+			<label>Datum rođenja: </label> <input type="date" name="datum_rodjenja"/></br>
+			<label>Stručna sprema: </label>
+			<select name="strucna_sprema">
+				<option value="NKV">NKV</option>
+				<option value="KV">KV</option>
+				<option value="VKV">VKV</option>
+				<option value="SSS">SSS</option>
+				<option value="VSS">VSS</option>
+			</select> </br>
+			<label>Pozicija u tvrtki: </label> <input type="text" name="pozicija"/> </br>
+			<label>Mjesečna plaća: </label> <input type="number" name="placa"/> </br>
+			<input type="submit" value="Kreiraj zaposlenika" id="kreiraj">
+			<span onClick="odustani()"> <button id="odustani">Odustani</button> </span>
+			
+			
+		</form>
+		
+		
+	</div>
+	
+	
+
+
+</body>
+
+<footer>
+
+	<p> Ivan Tomić - Stručni studij Telematika - Veleučilište u Rijeci - 2016/17 </p>
+
+</footer>
+</html>
